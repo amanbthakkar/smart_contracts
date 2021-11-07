@@ -1,0 +1,5 @@
+Notes from https://www.youtube.com/watch?v=M576WGiDBdQ&list=LL&index=18&t=5490s
+
+Ganache => quickstart starts wn local fake blockchain
+Looks like metamask
+Addresses with private keys
