@@ -1,0 +1,18 @@
+Hello.
+
+Contracts are stored inside contracts/ - brownie knows where to look
+That is not the same as build/contracts/
+Interfaces is for the chainlink type stuff
+Scripts are to automate tasks like deploying and calling functions
+Tests are for tests
+====================================================================================================
+brownie compile => stores info in build/contracts/ -> the json 
+====================================================================================================
+To deploy to blockchain we write a deploy.py script/
+
+brownie run scripts/<name>
+
+It runs a ganache-cli blockchain local one by default. Can change to rinkeby and all later. 
+====================================================================================================
+In basic web3 all what we did brownie does automatically. 
+We need an address and private key. 

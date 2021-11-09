@@ -49,14 +49,16 @@ abi = compiled_sol["contracts"]["SimpleStorage.sol"]["SimpleStorage"]["abi"]
 # ganache has RPC server which has a url
 # in remix we use Metamask directly to connect to blockchain
 
-w3 = Web3(Web3.HTTPProvider("http://127.0.0.1:7545"))
+w3 = Web3(
+    Web3.HTTPProvider("https://rinkeby.infura.io/v3/5ea9575ca1ed4b9c81dfed24b5811db2")
+)  # see online for rinkeby url
 
 # need ID of blockchain/network
-chain_id = 1337
+chain_id = 4  # 1337 for ganache local, and see online for rinkeby
 
 # need address to deploy from
-my_address = "0x59ED98c623066B3974F0A0BE5e4003Bada1Cf82D"  # any random address
-private_key = "0x"  # take its private key
+my_address = "0xA09bCDF582a36c95eC2e8A816c86A074D9290970"  # any random address - use Metamask for testnet
+private_key = "0x"  # take its private key - updated below.
 
 # first create the contract using abi and bytecode
 SimpleStorage = w3.eth.contract(abi=abi, bytecode=bytecode)

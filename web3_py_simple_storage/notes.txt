@@ -3,3 +3,17 @@ Notes from https://www.youtube.com/watch?v=M576WGiDBdQ&list=LL&index=18&t=5490s
 Ganache => quickstart starts wn local fake blockchain
 Looks like metamask
 Addresses with private keys
+
+pip install yarn => for ganache CLI
+yarn global add ganache-cli
+ganache-cli --version 
+<close the UI>
+
+ganache-cli =>node will start running and listening
+ganache-cli --deterministic =>always same addresses and private keys
+documentation online on npm website
+
+
+...turns out that didnt work but an npm install worked.
+
+Brownie is build on web3.py
